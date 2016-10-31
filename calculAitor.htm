@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>calculAITOR.exe</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<style>
+	.button5 {
+		background-color: white;
+		color: black;
+		border: 2px solid #555555;
+		width: 55px;
+	}
+
+	.button5:hover {
+		background-color: #555555;
+		color: white;
+	}
+	
+    .button2 {
+		background-color: white;
+		color: black;
+		border: 2px solid #555555;
+		width: 180px;
+	}
+
+	.button2:hover {
+		background-color: #555555;
+		color: white;
+	}
+	
+	.button3 {
+		background-color: white;
+		color: black;
+		border: 2px solid #555555;
+		width: 117px;
+	}
+
+	.button3:hover {
+		background-color: #555555;
+		color: white;
+	}
+	</style>
+
+<script type="text/javascript">
+	//Variables
+    var num, acc = 0, op = "";
+
+	//Function SUMAR
+	function mas()   {
+		num.operand = num.value;
+		num.value = "";
+		acc = num.operand;  op = "+"; 
+	}
+	
+	//Function ELEVAR
+	function elevar()   {
+		num.operand = num.value;
+		num.value = "";
+		acc = num.operand;  op = "e"; 
+	}
+	
+	//Function RESTAR
+	function menos() {
+		num.operand = num.value;
+		num.value = "";
+		acc = num.operand;  op = "-"; 
+	}
+	
+	//Function CALCULAR
+    function calcular() {	
+	//num.value = document.getElementById("num");
+	
+		if (op === "+") {
+			num.value = (+acc + +num.value)
+		}
+		if (op === "-") {
+			num.value = (+acc - +num.value)
+		}
+		if (op === "*") {
+			num.value = (+acc * +num.value)
+		}
+		if (op === "/") {
+			num.value = (+acc / +num.value)
+		}
+		if (op === "e") {
+			num.value = Math.pow(+acc,+num.value)
+		}
+    }
+	
+	//Function INICIALIZAR
+	function inic ()   {
+		num = document.getElementById("num");
+	}
+	
+	//Function VACIAR-BORRAR
+	function vaciar () {
+		num.value = "";
+	}  
+
+	
+	//--------------------------------------------------------------------------------------------
+	/* AÑADIR NÚMEROS, hechos de distintas funciones por error al no introducir <form> </form>*/
+	//--------------------------------------------------------------------------------------------
+	//Function añadir NUMERO 1
+	function addCharacterToTextBoxuno(){
+		num.value = num.value+1;
+	}
+	
+	//Function añadir NUMERO 2
+	function addCharacterToTextBoxdos(){
+		num.value = num.value+2;
+	}
+	
+	//Function añadir NUMERO 3
+	function addCharacterToTextBoxtres(){
+		num.value = num.value+3;
+	}
+	
+	//Function añadir NUMERO 4
+	function addCharacterToTextBoxcuatro(){
+		num.value = num.value+4;
+	}
+	
+	//Function añadir NUMERO 5
+	function addCharacterToTextBoxcinco(){
+		num.value = num.value+5;
+	}
+	
+	//Function añadir NUMERO 6
+	function addCharacterToTextBoxseis(){
+		num.value = num.value+6;
+	}
+	
+	//Function añadir NUMERO 7
+	function addCharacterToTextBoxsiete(){
+		num.value = num.value+7;
+	}
+	
+	//Function añadir NUMERO 8
+	function addCharacterToTextBoxocho(){
+		num.value = num.value+8;
+	}
+	
+	//Function añadir NUMERO 9
+	function addCharacterToTextBoxnueve(){
+		num.value = num.value+9;
+	}
+	
+	//Function añadir NUMERO 0
+	function addCharacterToTextBoxcero(){
+		num.value = num.value+0;
+	}
+	//--------------------------------------------------------------------------------------------
+	//--------------------------------------------------------------------------------------------
+	
+	
+	//Function MULTIPLICAR
+	function multiplicar(){
+		num.operand = num.value;
+		num.value = "";
+		acc = num.operand;  op = "*"; 
+	}
+	
+	//Function DIVIDIR  
+	function dividir(){
+		num.operand = num.value;
+		num.value = "";
+		acc = num.operand;  op = "/"; 
+	}
+	
+	//Function CUADRADO
+	function cuadrado() {
+		var num = document.getElementById("num");
+		num.value = num.value * num.value;
+	}
+	
+	//Function INVERSO	
+	function inverso() {
+		var num = document.getElementById("num");
+		num.value = 1/num.value;
+	}
+	
+	//Function SQRT
+	function sqrtfunct() {
+		var num = document.getElementById("num");
+		num.value = Math.sqrt(num.value);
+	}
+	
+	//Function PARTE ENTERA
+	function parteEntera() {
+	var num = document.getElementById("num");
+		if(num.value>0){
+			num.value = Math.floor(num.value);	
+		}else if(num.value<0){
+			num.value = -Math.ceil(num.value);	
+		}
+	}
+		
+	//Function ROUND UP
+	function roundUP() {
+		var num = document.getElementById("num");
+		num.value = Math.ceil(num.value);	
+		
+		
+	}
+</script>
+</head>
+
+<body onLoad="inic()" background="img/background2.jpg">
+	<div class="w3-container" style="text-align: CENTER;">
+	<p> <h3><strong>Buenos días, bienvenido a la calculadora de Aitor J. Santaeugenia Marí</strong></h3>
+	</p>
+		<div class="w3-container" style="
+										   border-radius: 25px;
+										   border: 2px solid #73AD21;">
+		  <br>
+		  
+		  <!-- BOTONES NÚMEROS -->
+		  <!-- AITOR NANO, mírate esto y acabalo, has de conseguir escribir los números y gl -->
+		  </p>
+		  
+		  <table class="w3-light-grey " style="   position: relative;
+										   padding:10px;
+										   left: 35%;
+										   border-radius: 25px;
+										   border: 2px solid #73AD21;">
+		  <!-- INICIO DE BOTONES
+		  Hemos realizado una tabla para que parezca más una calculadora ordinaria, que no un simple ejercicio
+		  con botones y un textbox -->
+			  <tr>
+				<th class="tg-031e" colspan = 5>calculAITOR.exe<p>
+				<input type="text" size="27" id="num" name="num" onClick="vaciar()"><p></th>
+			  </tr>
+			  <tr>
+				<td class="tg-yw4l"><button class="button button5" onClick="mas()">+</button></td>
+				<td class="tg-yw4l"><button class="button button5" onClick="menos()">-</button></td>
+				<td class="tg-yw4l"><button class="button button5" onClick="multiplicar()">*</button></td>
+				<td class="tg-yw4l"><button class="button button5" onClick="dividir()">/</button></td>
+				<td class="tg-yw4l"><button class="button button5" onclick="cuadrado()">x<sup>2</sup></button></td>
+			  </tr>
+			  <tr>
+				<td class="tg-yw4l"><button class="button button5" onClick="addCharacterToTextBoxcinco()" value="5" id="cincofive">5</button></td>
+				<td class="tg-yw4l"> <button class="button button5" onClick="addCharacterToTextBoxseis()" value="6" id="cincofive">6</button></td>
+				<td class="tg-yw4l"> <button class="button button5"onClick="addCharacterToTextBoxsiete()" value="7" id="cincofive">7</button></td>
+				<td class="tg-yw4l"><button class="button button5"onClick="addCharacterToTextBoxocho()" value="8" id="cincofive">8</button></td>
+				<td class="tg-yw4l"><button class="button button5" onClick="addCharacterToTextBoxnueve()" value="9" id="seisix">9</button></td>
+			  </tr>
+			  <tr>
+			  	<td class="tg-yw4l"> <button class="button button5" onClick="addCharacterToTextBoxcero()" value="0" id="cero">0</button></td>
+				<td class="tg-yw4l"> <button class="button button5" onClick="addCharacterToTextBoxuno()" value="1" id="oneuno">1</button></td>
+				<td class="tg-yw4l"><button class="button button5" onClick="addCharacterToTextBoxdos()" value="2" id="dosdue">2</button></td>
+				<td class="tg-yw4l"><button class="button button5" onClick="addCharacterToTextBoxtres()" value="3" id="trestri">3</button></td>
+				<td class="tg-yw4l"><button class="button button5" onClick="addCharacterToTextBoxcuatro()" value="4" id="cuatrofour">4</button></td>
+			  </tr>
+			  <tr>
+				<td class="tg-yw4l"><button class="button button5"onclick="inverso()"> 1/x </button>  </td>
+				<td class="tg-yw4l"><button class="button button5" onclick="sqrtfunct()"> √ </button> </td>
+				<td class="tg-yw4l"><button class="button button5" onClick="elevar()"> X<sup>n</sup> </button> </td>
+				<td class="tg-yw4l"><button class="button button5" onClick="parteEntera()"> INT </button> </td>
+				<td class="tg-yw4l"><button class="button button5" onClick="roundUP()"> UP </button></td>
+			  </tr>
+			  <tr>
+				<td class="tg-yw4l" colspan="2"> <button class="button button3" onClick="vaciar()"> C </button></td>
+				
+				<td class="tg-yw4l" colspan="3"> <button class="button button2" onClick="calcular()">=</button>	</td>
+			  </tr>
+		</table><br>
+		<button class="button button3" target="popup" style="text-align: center;" onclick="window.open('list_done3.html','Lista_ejercicios','width=600,height=800')"> Lista ejercicios </button>
+		<br><br><br>
+		</div>
+	<div>
+</body>
+
+</html>

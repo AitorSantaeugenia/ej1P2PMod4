@@ -1,0 +1,171 @@
+
+<br><br>
+<ul>
+	<hr style="height:8px; color: black; background-color: black;" />
+	<ol>
+	<h3>Qu&eacute; se ha realizado:</h3></ol>
+	<li><strike>“Buenos días, bienvenido a la calculadora de &lt;nombre y apellido de la persona&gt;”</strike></li>
+	<li> <strike>Operaciones unitarias (con un solo operando):</strike> </li>
+	<ol>
+		<li> <strike>x^2 (número elevado al cuadrado) </strike></li>
+		<li> <strike>1/x (inverso del número) </strike></li>
+		<li> <strike>sqrt(x) (raiz cuadrada del número)  </strike></li>
+		<li> <strike>parte_entera(x) (parte entera de x: si x es positivo devuelve Math.floor(x) y si es negativo devuelve -Math.ceil(x)) </strike></li>
+	</ol>
+	<li><strike>Operaciones binarias (con dos operandos):</li>
+	<ol>
+		<li> +. -. *, / (suma, resta, multiplicación y división) </li>
+		<li> x^y (x elevado a y) </strike></li>
+	</ol>
+	<li>Subir dicha aplicación a la cuenta de neocities.org</li><br>
+	<hr style="height:8px; color: black; background-color: black;" />
+</ul>
+
+<ul><ol><h3>D&oacutende ha sido utilizado</h3></ol>
+	<li><strong>Mensaje de bienvenida:</strong><br>
+	<strong><font color="red">Línia 212</font> del documento calculAitor.exe</strong><br>
+	<i><font color="blue">&lt;p&gt;&lt;h3&gt;&lt;strong&gt;</font><strong>Buenos días, bienvenido a la calculadora de Aitor J. Santaeugenia Marí</strong><font color="blue">&lt;/strong&gt;&lt;/h3&gt;
+	&lt;/p&gt;</font></i>
+	</li><br>
+	<li> <strong>Operaciones unitarias (con un solo operando): </strong><br></li>
+	<ol>
+		<li> 
+		<strong>x^2 - CUADRADO</strong><br>
+		<font color="red"><strong>Función en línia 172</strong></font>, botón en línia 240 del documento calculAitor.exe <br>
+		 <i><font color="green">//Function CUADRADO</font>
+		<br><font color="blue">function</font> cuadrado() {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;var num = document.getElementById(<font color="gray">"num"</font>);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;num.value = num.value * num.value;<br>
+		}<br></i>
+		</li><br>
+		<li> 
+		<strong>1/x - INVERSO</strong><br>
+		<font color="red"><strong>Función en línia 178</strong></font>, botón en línia 257 del documento calculAitor.exe <br> 
+		<i><font color="green">//Function INVERSO</font>
+		 <br><font color="blue">function</font> inverso()   {
+		 <br>	&nbsp;&nbsp;&nbsp;&nbsp;var num = document.getElementById(<font color="gray">"num"</font>);
+		 <br>	&nbsp;&nbsp;&nbsp;&nbsp;acc = <font color="red">1</font>/num.value;
+		 <br>}</i>
+		</li><br>
+		<li> 
+		<strong>Sqrt(x) - RAÍZ</strong><br>
+		<font color="red"><strong>Función en línia 184</strong></font>, botón en línia 258 del documento calculAitor.exe <br> 
+		<i><font color="green">//Function SQRT</font>
+		 <br><font color="blue">function</font> sqrtfunct()   {
+		 <br>	&nbsp;&nbsp;&nbsp;&nbsp;var num = document.getElementById(<font color="gray">"num"</font>);
+		 <br>	&nbsp;&nbsp;&nbsp;&nbsp;num.value = Math.sqrt(num.value);
+		 <br>}</i>
+		</li><br>
+		<li> 
+		<strong>PARTE_ENTERA(x)</strong><br>
+		<font color="red"><strong>Función en línia 190</strong></font>, botón en línia 260 del documento calculAitor.exe <br> 
+		<i><font color="green">//Function PARTE ENTERA</font><br>
+		<font color="blue">function</font> parteEntera() {<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;var num = document.getElementById(<font color="gray">"num"</font>);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(num.value><font color="red">0</font>){<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num.value = Math.floor(num.value);	<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}else if(num.value<<font color="red">0</font>){<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num.value = -Math.ceil(num.value);	<br>
+		}<br>
+		}</i>
+		</li><br>
+		<li>
+		<strong>EXTRA Math.ceil(num.value)</strong><br>
+		Hemos añadido también un <strong>Math.ceil(num.value) para el redondeo hacía arriba</strong> (el enunciado nos pedía usar -Math.ceil(num.value), así que lo usamos en el botón INT todo conjunto y luego <strong>botón UP</strong> sin el signo "-"
+		<br><font color="red"><strong>Función en línia 201</strong></font>, botón en línia 261 del documento calculAitor.exe <br>
+		</li>
+		<i><font color="green">//Function ROUND UP</font><br>
+		<font color="blue">function</font> roundUP() {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;var num = document.getElementById(<font color="gray">"num"</font>);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;num.value = Math.ceil(num.value);	<br>
+		}<br></i>
+	</ol><br>
+	<li>Operaciones binarias (con dos operandos):</li>
+	<ol>
+		<li> <strong>SUMA</strong><br>
+		<font color="red"><strong>Función en línia 50</strong></font>, botón en línia 236 del documento calculAitor.exe <br>
+		
+		<i><font color="green">//Function SUMAR</font><br>
+		<font color="blue">function</font> mas()   {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;num.operand = num.value;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;num.value = <font color="gray">""</font>;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;acc = num.operand;  op = <font color="gray">"+"</font>; <br>
+		}</i><br><br>
+		<strong>RESTA</strong><br>
+		<font color="red"><strong>Función en línia 63</strong></font>, botón en línia 237 del documento calculAitor.exe <br>
+		<i><font color="green">//Function RESTAR</font><br>
+		<font color="blue">function</font> menos() {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;num.operand = num.value;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;num.value = <font color="gray">""</font>;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;acc = num.operand;  op = <font color="gray">"-"</font>; <br>
+		}<br></i>
+		
+		<br><strong>MULTIPLICACIÓN</strong><br>
+		<font color="red"><strong>Función en línia 158</strong></font>, botón en línia 240 del documento calculAitor.exe <br>
+		<i><font color="green">//Function MULTIPLICAR</font><br>
+		<font color="blue">function</font> multiplicar(){<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;num.operand = num.value;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;num.value = <font color="gray">""</font>;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;acc = num.operand;  op = <font color="gray">"*"</font>; <br>
+		}<br></i>
+		
+		<br><strong>DIVISIÓN</strong><br>
+		<font color="red"><strong>Función en línia 165</strong></font>, botón en línia 239 del documento calculAitor.exe <br>
+		<i><font color="green">//Function DIVIDIR</font><br>
+		<font color="blue">function</font> dividir(){<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;num.operand = num.value;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;num.value = <font color="gray">"-"</font>;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;acc = num.operand;  op = <font color="gray">"/"</font>; <br>
+		}<br></i>
+		
+		</li><br>
+		<li><strong>ELEVAR a N</strong><br>
+		<font color="red"><strong>Función en línia 57 y 86</strong></font>, botón en línia 259 del documento calculAitor.exe <br>
+		 <i><font color="green">//Function ELEVAR</font>
+		 <br><font color="blue">function</font> elevar()   {
+		 <br>	&nbsp;&nbsp;&nbsp;&nbsp;num.operand = num.value;
+		 <br>	&nbsp;&nbsp;&nbsp;&nbsp;num.value = <font color="gray">""</font>;
+		 <br>	&nbsp;&nbsp;&nbsp;&nbsp;acc = num.operand;  op = <font color="gray">"e"</font>; 
+		 <br>}</i>
+		</li>
+		<br><strong>FUNCIÓN OPERACIONES BINARIAS</strong><br>
+		<font color="red"><strong>Función de la línia 71 a 89</strong></font><br>
+			<i><font color="green">//Function CALCULAR</font><br>
+			<font color="blue">function</font> calcular() {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<font color="blue">if</font> (op === <font color="gray">"+"</font>) {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num.value = (+acc + +num.value)<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<font color="blue">if</font> (op === <font color="gray">"-"</font>) {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num.value = (+acc - +num.value)<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<font color="blue">if</font> (op === <font color="gray">"*"</font>) {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num.value = (+acc * +num.value)<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<font color="blue">if</font> (op === <font color="gray">"/"</font>) {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num.value = (+acc / +num.value)<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<font color="blue">if</font> (op === <font color="gray">"e"</font>) {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num.value = Math.pow(+acc,+num.value)<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    }<br></i>
+	</ol><br>
+	<li>Subir dicha aplicación a la cuenta de neocities.org</li><br>
+	<li><strong>EXTRAS NO EXPLICADOS ANTERIORMENTE:</strong><br>
+	<strong>BOTONES DE NÚMEROS</strong><br>
+	<font color="red"><strong>Línia 102 a 153</font></strong> para las <strong>funciones de los botones.</strong><br>
+	<i><font color="green">//Function añadir NUMERO 1</font>
+	<br><font color="blue"> function </font>addCharacterToTextBoxuno(){<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;num.value = num.value+1;<br>
+	}<br></i>
+	<strong>Esta función ha sido creada para todos y cadauno de los botones de números</strong>, ya que <strong>sin &lt;form&gt;</strong> nos daba error (y ya teníamos avanzado mucho el trabajo cómo para cambiar-lo)
+	
+	<br>
+	<br><strong>FUNCIÓN VACIAR</strong><br>
+	<font color="red"><strong>Línia 96 para la función</font></strong> y línias 233 & 264 <strong>para el textbox y el botón C.</strong> (ambos hacen lo mismo, uno haciendo click dentro del textbox y el otro haciendo click en el botón)<br>
+	<i><font color="green">//Function VACIAR-BORRAR</font>
+	<br><font color="blue"> function </font> vaciar () {<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;num.value = "";<br>
+	} <br></i>
+	
+	</li><br><br><br>
+</ul>
